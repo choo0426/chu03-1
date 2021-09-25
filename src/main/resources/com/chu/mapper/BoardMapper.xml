@@ -10,4 +10,11 @@
 		values (chu_board_seq.nextval, #{title}, #{content}, #{writer})
 		]]>
 	</insert>
+	
+	<!-- 게시판 목록 -->
+	<select id="getList" resultType="com.chu.model.BoardVO">
+		<![CDATA[
+		select * from chu_board order by bno desc
+		]]>
+	</select>
 </mapper>
