@@ -25,5 +25,11 @@ public class BoardServiceImpl implements BoardService {
 	public List<BoardVO> getList() {
 		return boardMapper.getList();
 	}
+	
+	//게시판 조회
+	@Override
+	public BoardVO getPage(int bno) {
+		return boardMapper.getPage(bno);
+	}
 
 }

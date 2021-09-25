@@ -17,4 +17,11 @@
 		select * from chu_board order by bno desc
 		]]>
 	</select>
+	
+	<!-- 게시판 조회 -->
+	<select id="getPage" resultType="com.chu.model.BoardVO">
+		<![CDATA[
+		select * from chu_board where bno = #{bno}
+		]]>
+	</select>
 </mapper>
