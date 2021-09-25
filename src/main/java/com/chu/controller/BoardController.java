@@ -52,7 +52,7 @@ public class BoardController {
 	}
 	
 	// 게시판 조회
-	@GetMapping("/getPage")
+	@GetMapping("/get")
 	public void boardGetPageGet(int bno, Model model) {
 		model.addAttribute("pageInfo", boardService.getPage(bno));
 	}
