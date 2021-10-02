@@ -79,5 +79,13 @@ public class BoardMapperTests {
 		int result = mapper.modify(board);
 		log.info("result : " + result);
 	}
+	
+	/*게시판 삭제*/
+	@Test
+	public void testDelete() {
+		
+		int result = mapper.delete(7);
+		log.info("result : " + result);
+	}
 
 }

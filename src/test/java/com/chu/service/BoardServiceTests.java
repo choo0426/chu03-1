@@ -50,5 +50,13 @@ public class BoardServiceTests {
 		int result = boardService.modify(board);
 		log.info("result : " + result);
 	}
-
+	
+	/*게시판 삭제*/
+	@Test
+    public void testDelete() {
+        
+        int result = boardService.delete(22);
+        log.info("result : " + result);
+        
+    }
 }
